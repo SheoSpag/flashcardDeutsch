@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css'
-import AppRoutes from './routes/AppRoutes'
-
+import CardComponent, {
+  CardBody,
+} from "./components/CardComponent/CardComponent.jsx";
+import ListComponent from "./components/ListComponent/ListComponent.jsx";
 
 function App() {
-
+  const list = ["Rachel", "Ross", "Joey", "Chandler", "Monica", "Phoebe"];
   return (
-    <Router>
-      <AppRoutes />
-    </Router>
-  )
+    <CardComponent body="Hola mundos">
+      <CardBody cardTitle={"Soy el titulo"} cardText={"Soy el texto"} />
+      <ListComponent list={list} />
+    </CardComponent>
+  );
 }
 
-export default App
+export default App;
