@@ -1,16 +1,8 @@
-import CardComponent, {
-  CardBody,
-} from "./components/CardComponent/CardComponent.jsx";
-import ListComponent from "./components/ListComponent/ListComponent.jsx";
+import { useState } from "react";
+import Home from "./pages/Home/Home";
 
 function App() {
-  const list = ["Rachel", "Ross", "Joey", "Chandler", "Monica", "Phoebe"];
-  return (
-    <CardComponent body="Hola mundos">
-      <CardBody cardTitle={"Soy el titulo"} cardText={"Soy el texto"} />
-      <ListComponent list={list} />
-    </CardComponent>
-  );
+  return <Home />;
 }
 
 export default App;

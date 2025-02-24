@@ -1,9 +1,12 @@
+import "./Home.css";
+import CardComponent from "../../components/CardComponent/CardComponent.jsx";
+
 function Home() {
-  const nombre = "Chanchito"
-  if (nombre) {
-    return <h1>Hola {nombre}!</h1> 
-  }
-  return <h1>Hola Mundo!</h1>
+  return (
+    <div className="homeContainer">
+      <CardComponent />
+    </div>
+  );
 }
 
 export default Home;

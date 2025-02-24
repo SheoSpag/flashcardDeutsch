@@ -1,0 +1,84 @@
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+.cardContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid var(--bs-secondary); /* Color inicial */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px;
+  transition: border-color 0.5s ease; /* Transición suave */
+}
+
+h5 {
+  margin: 0 !important;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 75%;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.classgio {
+  padding: 10px;
+}
+
+.elemento {
+  transition: 0.3s !important;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+}
+
+.nextWord {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nextWord.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.next {
+  width: 80%;
+}
+
+.siguiente-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.siguiente-container.show {
+  opacity: 1;
+  max-height: 100px;
+}
